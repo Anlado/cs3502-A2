@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
     	}
 
     	clock_t end_time = clock();
-    	double total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;*/
+    	double total_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
     	fprintf(stderr, "\n[Final Statistics]\n");
     	fprintf(stderr, "Lines: %d\n", line_count);
@@ -97,7 +97,7 @@ int main(int argc, char *argv[]) {
     	fprintf(stderr, "Lines/sec: %.2f\n", line_count / total_time);
     	fprintf(stderr, "Bytes/sec: %.2f\n", char_count / total_time);
     	fprintf(stderr, "MB/sec: %.2f\n", (char_count / 1024.0 / 1024.0) / total_time);
-    	fprintf(stderr, "Latency: %.2f\n", total_time);*/
+    	fprintf(stderr, "Latency: %.2f\n", total_time);
 
 
     	return 0;
